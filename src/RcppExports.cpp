@@ -6,6 +6,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // SquareHinge
 Rcpp::List SquareHinge(arma::mat& YMAT, int DIM, double EPSILON, bool returnAll, double rho);
 RcppExport SEXP _SSOSVM_SquareHinge(SEXP YMATSEXP, SEXP DIMSEXP, SEXP EPSILONSEXP, SEXP returnAllSEXP, SEXP rhoSEXP) {

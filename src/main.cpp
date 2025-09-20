@@ -2,7 +2,7 @@
 // [[Rcpp::plugins(cpp11)]]   
 
 //'@importFrom Rcpp sourceCpp
-//'@useDynLib SSOSVM
+//'@useDynLib SSOSVM, .registration=TRUE
 
 #include "RcppArmadillo.h"
 

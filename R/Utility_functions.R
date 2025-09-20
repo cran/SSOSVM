@@ -6,8 +6,8 @@
 #'
 #'@author Andrew T. Jones,  Hien D. Nguyen, Geoffrey J. McLachlan
 #'@references  Hien D. Nguyen, Andrew T. Jones and Geoffrey J. McLachlan. (2018). Stream-suitable optimization algorithms for some soft-margin support vector machine variants, Japanese Journal of Statistics and Data Science, vol. 1, Issue 1, pp. 81-108. 
-#'@docType package
 #'@name SSOSVM
+"_PACKAGE"
 NULL
 
 #'Generate Simulations
